@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swiper with Buttons</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-container {
+      width: 400px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 24px;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Swiper with Buttons</h1>
+
+  <div class="swiper-container" id="swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h2>Swiper 1</h2>
+        <button class="button">Button 1</button>
+      </div>
+      <div class="swiper-slide">
+        <h2>Swiper 1</h2>
+        <button class="button">Button 2</button>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="swiper-container" id="swiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h2>Swiper 2</h2>
+        <button class="button">Button 1</button>
+      </div>
+      <div class="swiper-slide">
+        <h2>Swiper 2</h2>
+        <button class="button">Button 2</button>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper1 = new Swiper('#swiper1', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper2 = new Swiper('#swiper2', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./new.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper.min.css">
+</head>
+<body>
+  <div class="main">
+  <div class="header">
+    <img src=""class="menu-icon">
+    <p> your web</p>
+    <img src=""class="bell-icon">
+  </div>
+  <div class="main-text">
+    <h2>What's Your plan for today ?</h2>
+    <small>here you can crite you da to day work list whit note</small>
+  </div>
+
+
+  <!-- Swiper--> 
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="1.jpg"> 
+        <h3>Home</h3>
+        <a href="#">Home</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="2.jpg"> 
+        <h3>Home</h3>
+        <a href="#">Home</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="3.jpg">
+        <h3>Home</h3>
+        <a href="#">Home</a> 
+      </div>
+      <div class="swiper-slide">
+        <img src="2.jpg"> </div>
+        <h3>Home</h3>
+        <a href="#">Home</a>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <div class="footer-menu">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src=""> 
+  </div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script type="module">
+  import Swiper from 'swiper/swiper-bundle.esm.js';
+  import 'swiper/swiper-bundle.css';
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    centeredSlider:true,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./new.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper.min.css">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <img src="" class="menu-icon">
+      <p>Your Web</p>
+      <img src="" class="bell-icon">
+    </div>
+    <div class="main-text">
+      <h2>What's Your Plan for Today?</h2>
+      <small>Here you can write your day-to-day work list with notes.</small>
+    </div>
+
+    <!-- Swiper 
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="1.jpg">
+          <h3>Home</h3>
+          <a href="#">Home</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="2.jpg">
+          <h3>Home</h3>
+          <a href="#">Home</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="3.jpg">
+          <h3>Home</h3>
+          <a href="#">Home</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="2.jpg">
+          <h3>Home</h3>
+          <a href="#">Home</a>
+        </div>
+      </div>
+      <!-- Add Pagination 
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="footer-menu">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script type="module">
+    import Swiper from 'swiper/swiper-bundle.esm.js';
+    import 'swiper/swiper-bundle.css';
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>-->
+
+
+
+        

@@ -1,0 +1,183 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+        <meta http-equiv= "X-UA-Compatible" content= "IEzedge">
+        <meta name="viexport" content="width=device-width, initial-scale=1.0" >
+        <title>Automatic card slider - Webiyor</title>
+        <link rel="stylesheet" href="s.css">
+        <link rel='stylesheet" href="https:///cdn.jsdelivr.net/rpm/swiper/swiper-bundle.min.css'/>
+        </head>
+</head>
+<body>
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+         <div class="card swiper-slide">
+            <div class="card-image">
+               <img src="11.png" alt=""> 
+            </div>
+            <div class="card_content">
+                <span class="card_title">Home </span>
+                <span class="card_name">Home</span>
+                <button class="card_btn">Home</button>
+            </div>
+         </div>   
+
+
+         <div class="card swiper-slide">
+            <div class="card-image">
+               <img src="22.png" alt=""> 
+            </div>
+            <div class="card_content">
+                <span class="card_title">todo </span>
+                <span class="card_name">Home</span>
+                <button class="card_btn">Home</button>
+            </div>
+         </div>  
+
+         <div class="card swiper-slide">
+            <div class="card-image">
+               <img src="33.png" alt=""> 
+            </div>
+            <div class="card_content">
+                <span class="card_title">singup </span>
+                <span class="card_name">Home</span>
+                <button class="card_btn">Home</button>
+            </div>
+         </div>  
+
+         <div class="card swiper-slide">
+            <div class="card-image">
+               <img src="44.png" alt=""> 
+            </div>
+            <div class="card_content">
+                <span class="card_title">note </span>
+                <span class="card_name">Home</span>
+                <button class="card_btn">Home</button>
+            </div>
+         </div>  
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+     var swiper = new swiper(".mySwiper",{
+
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000, //2000ms = 25;
+        autoplayHoverPause: true,
+        
+        effect: "coverflow",
+        grabCursor: true,
+        centeredslides: true,
+        slidesPerView: "auto",
+        coverflowEffect:{
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier:1,
+        slideShadows: false,
+        },
+         pagination: {
+el: ".swiper-pagination",
+         },
+
+
+
+     });
+
+    </script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic card slider - Webiyor</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="11.png" alt=""> 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Home </span>
+                    <span class="card_name">Home</span>
+                    <a href="index.html" ><button class="card_btn">Home</button></a>
+                </div>
+            </div>   
+
+          
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="33.png" alt=""> 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">singup </span>
+                    <span class="card_name">singup </span>
+                    <a href="singup.html" ><button class="card_btn">singup</button></a>
+                </div>
+            </div>  
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="44.png" alt=""> 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">todo </span>
+                    <span class="card_name">todo</span>
+                    
+                    <a href="todo.html" ><button class="card_btn">todo</button></a>
+                </div>
+            </div> 
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="22.png" alt=""> 
+                </div>
+                <div class="card_content">
+                    <span class="card_title">note </span>
+                    <span class="card_name">note</span>
+                    <a href="notekeeper.html" ><button class="card_btn">note</button></a>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>
